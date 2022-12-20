@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:visited:hover{
+            color: black;
+            padding-left: 120px;
+            font-size: 25px;
+        }
+        a{
+           
+            height: 20px;
+            background-color: orange;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+        }
+        h3{
+            color: red;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 3s;
+        }
+        .box:hover{
+            padding-left: 100px;
+            background-color: gray;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:gray;
+            transform: skewX(20deg);
+            margin-left: 70px;
+
+        }
+        .grid{
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .item1{
+            width: 100%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 5px;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        .item2{
+            margin: 5px;
+            width: 98%;
+            height: 110px;
+            margin-right: 5px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            grid-row-start: 2;
+            grid-row-end: 4;
+           
+        }
+        .item3{
+            margin: 5px;
+            width: 98%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+         
+            grid-column-start: 2;
+            grid-column-end: 3;
+           
+        }
+        .item4{
+            width: 98%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 5px;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .item5{
+            width: 100%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 5px;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .item5{
+            width: 100%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 5px;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        .item6{
+            width: 100%;
+            height: 50px;
+            background-color: teal;
+            border-radius: 10px;
+            border: 1px solid black;
+            margin: 5px;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        h1{
+            text-align: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>CSS INTERVIEW QUESTIONS DAY-5</h1>
+    <h3>Show implementation of transition ?</h3>
+    <p>CSS transitions allows you to change property values smoothly, over a given duration.</p>
+    <p>
+        transition-delay :2s <br>
+        transition-duration : 5ms <br>
+        transition-property :linear<br>
+        transition-timing-function  : all</p>
+    <pre>
+    implementation code :-
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transition: 3s;
+        }
+        .box:hover{
+            padding-left: 100px;
+            background-color: gray;
+        }
+    </pre>
+    <div class="box">
+
+    </div>
+    <h3>Show implementation of transformation ?</h3>
+    <p>CSS transforms allow you to move, rotate, scale, and skew elements. Mouse over the element below to see a 2D transformation: 2D rotate.</p>
+    <pre>
+        implementation code :-
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color:gray;
+            transform: skewX(20deg);
+            margin-left: 70px;
+
+        }
+    </pre>
+    <div class="box1">
+
+    </div>
+    <h3> Show implementation of grid ?</h3>
+    <div class="grid">
+        <div class="item1"> box-1</div>
+        <div class="item2">box-2</div>
+        <div class="item3">box-3</div>
+        <div class="item4">box-4</div>
+        <div class="item5">box-5</div>
+        <div class="item6">box-6</div>
+        
+    </div>
+    <h3>what are css combinators ?</h3>
+    <p>A combinator is something that explains the relationship between the selectors.</p>
+    <ul>
+        <li> descendant selector (space)</li>
+        <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+        <li> child selector (>)</li>
+        <p>The child selector selects all elements that are the children of a specified element.</p>
+        <li> adjacent sibling selector (+)</li>
+        <p>The adjacent sibling selector is used to select an element that is directly after another specific element.
+
+        </p>
+        <li>general sibling selector (~)</li>
+        <p>The general sibling selector selects all elements that are next siblings of a specified element.
+
+        </p>
+    </ul>
+   
+
+    <h3>what are pseudo selectors in css ?</h3>
+    <p>A pseudo-class is used to define a special state of an element.</p>
+    <pre>
+        Style an element when a user mouses over it
+        Style visited and unvisited links differently
+        Style an element when it gets focus
+        a:visited:hover{
+            color: black;
+            padding-left: 120px;
+            font-size: 25px;
+        }
+        a{
+           
+            height: 20px;
+            background-color: orange;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+        }
+        
+    </pre>
+    <a href="https://www.prepbytes.com/">Prepbytes</a>
+    
+</body>
+</html>
